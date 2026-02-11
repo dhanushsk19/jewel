@@ -12,8 +12,8 @@ import Layout from "@/components/Layout";
 import { useState, useEffect, useRef } from "react";
 
 const heroSlides = [
-  { image: hero1, subtitle: "New Arrivals 2026", title: "Where Tradition Meets\nTimeless Elegance", cta: "Shop Now" },
-  { image: hero2, subtitle: "Bridal Collection", title: "Adorn Your\nMost Beautiful Moments", cta: "Explore Collections" },
+  { image: hero1, subtitle: "New Arrivals 2026", title: "Where Tradition Meets\nRoyal Elegance", cta: "Shop Now" },
+  { image: hero2, subtitle: "Bridal Collection", title: "Adorn Your\nMost Beautiful Moments", cta: "Shop Now" },
 ];
 
 const collections = [
@@ -74,12 +74,7 @@ const Index = () => {
               >
                 {heroSlides[currentSlide].cta} <ArrowRight size={14} />
               </Link>
-              <Link
-                to="/collections"
-                className="inline-flex items-center gap-3 font-body text-xs tracking-[0.2em] uppercase border border-primary-foreground/40 text-primary-foreground px-8 py-3.5 hover:bg-primary-foreground/10 transition-all duration-300"
-              >
-                Explore Collections
-              </Link>
+             
             </div>
           </div>
         </div>
